@@ -5,9 +5,9 @@ var fs = require('fs');
 var stream = require('stream');
 
 describe('PDFKit', function () {
-  var outputFile = __dirname + '/generate/output.pdf';
+  var _outputFile;
 
-  var expectEnd = function (done) {
+  var expectEnd = function (outputFile, done) {
     return function () {
       if (err) {
         return done(err);
@@ -22,30 +22,24 @@ describe('PDFKit', function () {
     }
   }
 
-  var toFile = function (pdf, done) {
-    pdf.toFile(outputFile, expectEnd(done));
+  var toFile = function (pdf, outputFile, done) {
+    outputFile = __dirname + outputFile;
+    pdf.toFile(outputFile, expectEnd(outputFile, done));
   }
-
-  beforeEach(function (done) {
-    if (fs.existsSync(outputFile)) {
-      fs.unlinkSync(outputFile);
-    }
-    done();
-  });
 
   it('#toFile from URL', function (done) {
     var pdf = PDFKit('url', 'http://google.com', {}, {}, false);
-    toFile(pdf, done);
+    toFile(pdf, '/generate/tofile_from_url.pdf', done);
   });
 
   it('#toFile from file', function (done) {
     var pdf = PDFKit('file', __dirname + '/fixtures/from_file.html', {}, {}, false);
-    toFile(pdf, done);
+    toFile(pdf, '/generate/tofile_from_file.pdf', done);
   });
 
   it('#toFile from html', function (done) {
     var pdf = PDFKit('html', '<h1>Hello</h1>', {}, {}, false);
-    toFile(pdf, done);
+    toFile(pdf, '/generate/tofile_from_html.pdf', done);
   });
 
   // Stream
