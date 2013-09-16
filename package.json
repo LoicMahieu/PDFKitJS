@@ -1,0 +1,24 @@
+{
+  "name": "pdfkitjs",
+  "version": "0.0.1",
+  "description": "HTML+CSS to PDF in Node.JS",
+  "homepage": "https://github.com/LoicMahieu/pdfkitjs",
+  "bugs": "https://github.com/LoicMahieu/pdfkitjs/issues",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/LoicMahieu/pdfkitjs.git"
+  },
+  "keyswords": [
+    "pdf",
+    "html",
+    "wkhtmltopdf"
+  ],
+  "dependencies": {
+    "lodash": "~2.0.0"
+  },
+  "devDependencies": {
+    "chai": "~1.7.2",
+    "jshint": "~2.1.10",
+    "mocha": "~1.13.0"
+  }
+}
