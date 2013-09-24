@@ -1,6 +1,6 @@
 {
   "name": "pdfkitjs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "HTML+CSS to PDF in Node.JS",
   "homepage": "https://github.com/LoicMahieu/pdfkitjs",
   "bugs": "https://github.com/LoicMahieu/pdfkitjs/issues",
