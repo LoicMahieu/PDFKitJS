@@ -2,7 +2,7 @@
 REPORTER ?= dot
 BIN = ./node_modules/.bin
 TESTS = $(wildcard test/.test.js)
-LIB = $(wildcard lib/.test.js)
+LIB = $(wildcard lib/.js)
 GENERATE = $(wildcard test/generate/*.pdf)
 
 # test commands 
@@ -11,7 +11,7 @@ clean:
 	@rm -f $(GENERATE)
 
 lint:
-	./node_modules/.bin/jshint ./lib/*.js
+	./node_modules/.bin/jshint ./lib/*.js ./test/*.js
 
 test:
 	make clean && \

@@ -33,7 +33,7 @@ pdf.toFile('google.pdf', function (err, file) {
 
 `options` : Object corresponding on wkhtmltopdf arguments. run `wkhtmltopdf --extended-help` for a full list of options
 
-`spawnOptions` : Options passed to [`child_process.spawn`](http://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options)
+`spawnOptions` : Options passed to [`child_process.spawn`](http://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options) except `exec` who is the path to the wkhtmltopdf binary. (Default: `wkhtmltopdf`)
 
 * `url`
 ```js
