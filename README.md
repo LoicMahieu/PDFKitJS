@@ -1,3 +1,8 @@
+# Deprecation warning
+
+This module is old and the API is not really consistent. I recommend you to use: https://github.com/devongovett/node-wkhtmltopdf
+
+
 # PDFKitJs
 
 Create PDFs using plain old HTML+CSS. Uses [wkhtmltopdf](https://github.com/antialize/wkhtmltopdf) on the back-end which renders HTML using Webkit.
