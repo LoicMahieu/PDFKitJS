@@ -1,6 +1,6 @@
 # Deprecation warning
 
-This module is old and the API is not really consistent. I recommend you to use: https://github.com/devongovett/node-wkhtmltopdf
+[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges) This module is old and the API is not really consistent. I recommend you to use: https://github.com/devongovett/node-wkhtmltopdf
 
 
 # PDFKitJs
