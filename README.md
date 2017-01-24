@@ -1,5 +1,7 @@
 # Deprecation warning
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LoicMahieu/PDFKitJS.svg)](https://greenkeeper.io/)
+
 [![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges) This module is old and the API is not really consistent. I recommend you to use: https://github.com/devongovett/node-wkhtmltopdf
 
 
