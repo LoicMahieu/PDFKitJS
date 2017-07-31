@@ -13,7 +13,7 @@ Hightly inspired by [PDFKit](https://github.com/pdfkit/pdfkit) written in Ruby
 
 ### PDFKit
 ```bash
-npm install pdfkit
+npm install pdfkitjs
 ```
 ### wkhtmltopdf
 
